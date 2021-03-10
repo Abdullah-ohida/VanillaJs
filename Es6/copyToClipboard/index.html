@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy To Clipbaord</title>
+
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            flex-direction: column;
+            background: linear-gradient(71deg, #4AF6BF, #DC927B);
+        }
+
+        .content{
+            background: black;
+            padding: 2rem;
+        }
+
+        input[type=text], button{
+            padding: 0.5rem 1rem;
+        }
+
+        button{
+            cursor: pointer;
+            outline: none;
+            transition: all 0.5s ease-in;
+        }
+
+        button:hover{
+            background: gray;
+            color: white;
+            border: none;
+        }
+
+        small{
+            background: black;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            margin: 2rem;
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <small id="alert"></small>
+    <div class="content">
+        <input type="text" id="input" placeholder="Type anything here">
+        <button id="btn">Copy</button>
+    </div>
+    <script src="copyToClipboard.js"></script>
+</body>
+</html>
